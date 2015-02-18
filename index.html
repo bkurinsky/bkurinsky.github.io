@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        <script>
+            
+            $(window).load(function() {
+                           url = 'http://data.ct.gov/resource/9k2y-kqxn.json?organization_type=Public%20Schools&$$app_token=CGxaHQoQlgQSev4zyUh5aR5J3';
+                           var center = new google.maps.LatLng(41.48,-72.757);
+                           var mapOptions = {
+                           zoom: 9,
+                           center: center
+                           }
+                           var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+                           };
+                           
+        
+        </script>
+    </head>
     <body>
         <h1>Hello World</h1>
         <p>I'm hosted with GitHub Pages.</p>
+        <div id="map-canvas"></div>
     </body>
 </html>
