@@ -29,10 +29,10 @@
                                      console.log(data);
                                      $.each(data, function(i, entry) {
                                             var marker = new google.maps.Marker({
-                                                                                position: new google.maps.LatLng(entry.location_1.latitude,
-                                                                                                                 entry.location_1.longitude),
+                                                                                position: new google.maps.LatLng(entry.latitude,
+                                                                                                                 entry.longitude),
                                                                                 map: map,
-                                                                                title: location.name
+                                                                                title: location.address
                                                                                 });
                                             });
                                      });
